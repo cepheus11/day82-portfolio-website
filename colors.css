@@ -1,0 +1,24 @@
+body {
+    background-color: #1E2022;
+    color: #DBE2EF;
+}
+
+.grid-element {
+    background-color: #1E2022;
+    border-color: #3F72AF;
+}
+
+.grid-element:hover {
+    background-color: #3F72AF;
+    color: #1E2022;
+}
+
+.unused {
+    background-color: #F9F7F7;
+    color: #DBE2EF;
+}
+
+.unused2 {
+    background-color: #3F72AF;
+    color: #1E2022;
+}
