@@ -3,12 +3,12 @@ body {
     color: #DBE2EF;
 }
 
-.grid-element {
+.flex-grid-element {
     background-color: #1E2022;
     border-color: #3F72AF;
 }
 
-.grid-element:hover {
+.flex-grid-element:hover {
     background-color: #3F72AF;
 }
 

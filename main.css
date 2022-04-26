@@ -15,31 +15,59 @@ body {
 }
 
 .grid {
+  display: grid;
+  width: 90vh;
+  height: 90vh;
+  min-width: 90vh;
+  min-height: 90vh;
+  max-width: 90vh;
+  max-height: 90vh;
+}
+
+.flex-grid {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     align-items: center;
     justify-content: center;
 }
 
-.grid-row {
+.flex-grid-row {
     display: flex;
     flex-direction: row;
+    margin: 1.5vh 0;
+    height: 30%;
+    min-height: 30%;
+    max-height: 30%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: visible;
     align-items: center;
     justify-content: center;
 }
 
-.grid-element {
+.flex-grid-element {
     display: flex;
-    padding: 13px;
-    margin: 12px;
-    width: 96px;
-    height: 96px;
+    margin: 0 1vh;
+    width: 30%;
+    height: 100%;
+    min-width: 30%;
+    min-height: 100%;
+    max-width: 30%;
+    max-height: 100%;
+    overflow: visible;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     border-style: solid;
     border-width: 3px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
 }
