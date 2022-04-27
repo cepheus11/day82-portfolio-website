@@ -72,6 +72,19 @@ body {
     font-size: 3vh;
 }
 
+@keyframes beat {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+.flex-grid-element:focus {
+    animation: beat 1s ease-in-out backwards;
+}
+
 .flex-grid-content {
     padding: 2vh;
 }
