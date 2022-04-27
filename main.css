@@ -53,6 +53,15 @@ body {
     justify-content: center;
 }
 
+@keyframes beat {
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(0.8, 0.8);
+    }
+}
+
 .flex-grid-element {
     display: flex;
     margin: 0 1vh;
@@ -72,17 +81,12 @@ body {
     font-size: 3vh;
 }
 
-@keyframes beat {
-    0% {
-        transform: scale(1, 1);
-    }
-    100% {
-        transform: scale(0.8, 0.8);
-    }
-}
-
 .flex-grid-element:focus {
     animation: beat 1s ease-in-out backwards;
+}
+
+.flex-grid-element:active {
+    animation: none;
 }
 
 .flex-grid-content {
