@@ -15,13 +15,48 @@ body {
 }
 
 .grid {
-  display: grid;
-  width: 90vh;
-  height: 90vh;
-  min-width: 90vh;
-  min-height: 90vh;
-  max-width: 90vh;
-  max-height: 90vh;
+    display: grid;
+    position: absolute;
+    width: 90vh;
+    height: 90vh;
+    min-width: 90vh;
+    min-height: 90vh;
+    max-width: 90vh;
+    max-height: 90vh;
+    border-radius: 1vh;
+    border-width: 0.5vh;
+}
+
+.nav-grid {
+    border-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.page-grid {
+    width: 30vh;
+    height: 30vh;
+    min-width: 30vh;
+    min-height: 30vh;
+    max-width: 30vh;
+    max-height: 30vh;
+    border-style: solid;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.page-grid:target {
+    width: 90vh;
+    height: 90vh;
+    min-width: 90vh;
+    min-height: 90vh;
+    max-width: 90vh;
+    max-height: 90vh;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .flex-grid {
@@ -53,15 +88,6 @@ body {
     justify-content: center;
 }
 
-@keyframes beat {
-    0% {
-        transform: scale(1, 1);
-    }
-    100% {
-        transform: scale(0.8, 0.8);
-    }
-}
-
 .flex-grid-element {
     display: flex;
     margin: 0 1vh;
@@ -71,7 +97,7 @@ body {
     min-height: 100%;
     max-width: 30%;
     max-height: 100%;
-    overflow: visible;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     border-radius: 1vh;
@@ -79,14 +105,6 @@ body {
     border-width: 0.5vh;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 3vh;
-}
-
-.flex-grid-element:focus {
-    animation: beat 1s ease-in-out backwards;
-}
-
-.flex-grid-element:active {
-    animation: none;
 }
 
 .flex-grid-content {

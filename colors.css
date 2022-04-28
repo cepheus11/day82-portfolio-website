@@ -3,6 +3,18 @@ body {
     color: #DBE2EF;
 }
 
+.grid {
+    background-color: #1E2022;
+}
+
+.page-grid {
+    border-color: #3F72AF;
+}
+
+.nav-link {
+    color: #DBE2EF;
+}
+
 .flex-grid-element {
     background-color: #1E2022;
     border-color: #3F72AF;
