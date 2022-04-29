@@ -7,11 +7,18 @@ body {
     vertical-align: center;
 }
 
-.main {
+.content {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
+}
+
+.main {
+    display: flex;
+    position: relative;
+    width: 98vh;
+    height: 98vh;
 }
 
 .grid {
@@ -33,30 +40,6 @@ body {
 
 .nav-link {
     text-decoration: none;
-}
-
-.page-grid {
-    width: 30vh;
-    height: 30vh;
-    min-width: 30vh;
-    min-height: 30vh;
-    max-width: 30vh;
-    max-height: 30vh;
-    border-style: solid;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.5s ease-in-out;
-}
-
-.page-grid:target {
-    width: 90vh;
-    height: 90vh;
-    min-width: 90vh;
-    min-height: 90vh;
-    max-width: 90vh;
-    max-height: 90vh;
-    opacity: 1;
-    pointer-events: auto;
 }
 
 .flex-grid {
@@ -85,7 +68,6 @@ body {
     max-width: 100%;
     overflow: visible;
     align-items: center;
-    justify-content: center;
 }
 
 .flex-grid-element {
@@ -109,4 +91,68 @@ body {
 
 .flex-grid-content {
     padding: 2vh;
+}
+
+.page-grid {
+    width: 30vh;
+    height: 30vh;
+    min-width: 30vh;
+    min-height: 30vh;
+    max-width: 30vh;
+    max-height: 30vh;
+    border-style: solid;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.page-grid:target {
+    width: 88vh;
+    height: 88vh;
+    min-width: 88vh;
+    min-height: 88vh;
+    max-width: 88vh;
+    max-height: 88vh;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#page1 {
+    left: 1vh;
+    top: 1vh;
+}
+
+#page1:target {
+    left: 1vh;
+    top: 1vh;
+}
+
+#page2 {
+    left: 32vh;
+    top: 32vh;
+}
+
+#page2:target {
+    left: 1vh;
+    top: 1vh;
+}
+
+#page3 {
+    left: 1vh;
+    top: 64vh;
+}
+
+#page3:target {
+    left: 1vh;
+    top: 1vh;
+}
+
+#page4 {
+    left: 64vh;
+    top: 64vh;
+}
+
+#page4:target {
+    left: 1vh;
+    top: 1vh;
 }
